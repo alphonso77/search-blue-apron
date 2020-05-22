@@ -11,7 +11,8 @@
     <script src="js/templates/templates.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        Coveo.SearchEndpoint.configureSampleEndpointV2();
+        //Coveo.SearchEndpoint.configureSampleEndpointV2();
+        Coveo.SearchEndpoint.configureCloudV2Endpoint('rdapartnerorgv0822hss', 'xx17c58cb5-9dac-4f61-bc61-b85fcd27f7d4');
         Coveo.init(document.body);
       })
     </script>
@@ -27,9 +28,8 @@
     </div>
     <div class="coveo-main-section">
       <div class="coveo-facet-column">
+        <div class="CoveoDynamicFacet" data-title="Time" data-field="@ba_total_time" data-id="@totalTime" data-number-of-values=""></div>
         <div class="CoveoFacet" data-title="Type" data-field="@objecttype" data-tab="All"></div>
-        <div class="CoveoFacet" data-title="FileType" data-field="@filetype" data-tab="All"></div>
-        <div class="CoveoFacet" data-title="Author" data-field="@author" data-tab="All"></div>
         <div class="CoveoFacet" data-title="Year" data-field="@year" data-tab="All"></div>
         <div class="CoveoFacet" data-title="Month" data-field="@month" data-tab="All"></div>
       </div>
