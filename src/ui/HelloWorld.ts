@@ -18,7 +18,7 @@ export class HelloWorld extends Component {
 
   static options: IHelloWorldOptions = {
     dummyOptionText: ComponentOptions.buildStringOption({
-      defaultValue: 'Hello world'
+      defaultValue: 'Search Blue Apron'
     }),
     dummyOptionQuery: ComponentOptions.buildStringOption({
       defaultValue: '@uri'
